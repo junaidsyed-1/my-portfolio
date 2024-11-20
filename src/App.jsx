@@ -15,11 +15,11 @@ function App() {
       <Element name="home">
         <Hero />
       </Element>
-      <Element name="about">
-        <About />
-      </Element>
       <Element name="skills">
         <Skills />
+      </Element>
+      <Element name="about">
+        <About />
       </Element>
       <Element name="projects">
         <Projects />

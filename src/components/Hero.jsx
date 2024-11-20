@@ -43,7 +43,7 @@ const Hero = () => {
         {/* Left Section: Text */}
         <div className="lg:w-1/2 text-center lg:text-left mt-5 md:">
           <motion.div
-            initial={{ x: -300 }}
+            initial={{ x: -200 }}
             animate={{ x: 0 }}
             transition={{ duration: 1.5, ease: "easeOut" }}
           >
@@ -64,6 +64,7 @@ const Hero = () => {
                   whileHover={{ scale: 1.1 }}
                   className={`btn ${isLoading ? "btn-disabled" : "btn-error"}`}
                   disabled={isLoading}
+                  whileTap={{ scale: 0.95 }}
                 >
                   View Projects
                 </motion.button>
@@ -77,6 +78,7 @@ const Hero = () => {
                 }`}
                 disabled={isLoading}
                 whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
                 aria-label="Download Junaid Syed CV"
               >
                 Download CV
@@ -88,7 +90,7 @@ const Hero = () => {
         {/* Right Section: Image */}
         <div className="lg:w-1/2 mt-8 lg:mt-0 flex justify-center relative">
           <motion.div
-            initial={{ x: 300 }}
+            initial={{ x: 200 }}
             animate={{ x: 0 }}
             transition={{ duration: 1.5, ease: "easeOut" }}
             className="relative w-full max-w-xs lg:max-w-sm xl:max-w-md 2xl:max-w-lg"
@@ -115,7 +117,7 @@ const Hero = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, ease: "easeOut" }}
-              className="hidden lg:flex items-center absolute left-[-75px] top-1/3 transform -translate-y-1/2 bg-secondary text-white font-bold px-6 py-3 rounded-lg shadow-lg"
+              className="hidden lg:flex items-center absolute left-[-20%] top-1/3 transform -translate-y-1/2 bg-secondary text-white font-bold px-6 py-3 rounded-lg shadow-lg"
             >
               <span className="text-3xl text-error font-extrabold mr-2">
                 {experienceCount.toFixed(1)}
@@ -126,12 +128,12 @@ const Hero = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, ease: "easeOut" }}
-              className="hidden lg:flex items-center absolute right-[-75px] top-3/4 transform -translate-y-1/2 bg-white  text-slate-600 font-bold px-6 py-3 rounded-lg shadow-lg"
+              className="hidden lg:flex items-center absolute right-[-25%] top-3/4 transform -translate-y-1/2 bg-white  text-slate-600 font-bold px-6 py-3 rounded-lg shadow-lg"
             >
               <span className="text-3xl text-secondary font-extrabold mr-3">
                 {projectsCount}+
               </span>
-              Project Completed
+              Projects Completed
             </motion.div>
           </motion.div>
         </div>
