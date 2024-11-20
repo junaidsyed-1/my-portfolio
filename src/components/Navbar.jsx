@@ -11,7 +11,7 @@ const Navbar = () => {
         <Link
           to="home"
           smooth={true}
-          duration={500}
+          duration={200}
           className="btn btn-ghost text-xl cursor-pointer"
         >
           Junaid Syed
@@ -24,7 +24,7 @@ const Navbar = () => {
             <Link
               to="home"
               smooth={true}
-              duration={500}
+              duration={200}
               className="cursor-pointer"
             >
               Home
@@ -34,7 +34,7 @@ const Navbar = () => {
             <Link
               to="about"
               smooth={true}
-              duration={500}
+              duration={200}
               className="cursor-pointer"
             >
               About
@@ -44,7 +44,7 @@ const Navbar = () => {
             <Link
               to="skills"
               smooth={true}
-              duration={500}
+              duration={200}
               className="cursor-pointer"
             >
               Skills
@@ -54,7 +54,7 @@ const Navbar = () => {
             <Link
               to="projects"
               smooth={true}
-              duration={500}
+              duration={200}
               className="cursor-pointer"
             >
               Projects
@@ -64,7 +64,7 @@ const Navbar = () => {
             <Link
               to="contact"
               smooth={true}
-              duration={500}
+              duration={200}
               className="cursor-pointer"
             >
               Contact
@@ -90,7 +90,7 @@ const Navbar = () => {
               <Link
                 to="home"
                 smooth={true}
-                duration={500}
+                duration={200}
                 onClick={() => setIsMenuOpen(false)}
                 className="cursor-pointer"
               >
@@ -101,7 +101,7 @@ const Navbar = () => {
               <Link
                 to="about"
                 smooth={true}
-                duration={500}
+                duration={200}
                 onClick={() => setIsMenuOpen(false)}
                 className="cursor-pointer"
               >
@@ -112,7 +112,7 @@ const Navbar = () => {
               <Link
                 to="skills"
                 smooth={true}
-                duration={500}
+                duration={200}
                 onClick={() => setIsMenuOpen(false)}
                 className="cursor-pointer"
               >
@@ -123,7 +123,7 @@ const Navbar = () => {
               <Link
                 to="projects"
                 smooth={true}
-                duration={500}
+                duration={200}
                 onClick={() => setIsMenuOpen(false)}
                 className="cursor-pointer"
               >
@@ -134,7 +134,7 @@ const Navbar = () => {
               <Link
                 to="contact"
                 smooth={true}
-                duration={500}
+                duration={200}
                 onClick={() => setIsMenuOpen(false)}
                 className="cursor-pointer"
               >
