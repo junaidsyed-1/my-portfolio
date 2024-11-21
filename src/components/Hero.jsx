@@ -23,13 +23,13 @@ const Hero = () => {
 
     let projCounter = setInterval(() => {
       setProjectsCount((prev) => {
-        if (prev >= 100) {
+        if (prev >= 20) {
           clearInterval(projCounter);
-          return 100;
+          return 20;
         }
         return prev + 1;
       });
-    }, 10);
+    }, 80);
 
     return () => {
       clearInterval(expCounter);
@@ -39,7 +39,7 @@ const Hero = () => {
 
   return (
     <div className="bg-base-100 min-h-screen flex justify-center items-center">
-      <div className="container flex flex-col-reverse lg:flex-row items-center px-6 py-16">
+      <div className="container flex flex-col-reverse lg:flex-row items-center px-6 py-8">
         {/* Left Section: Text */}
         <div className="lg:w-1/2 text-center lg:text-left mt-5 md:">
           <motion.div

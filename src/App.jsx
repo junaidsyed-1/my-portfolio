@@ -7,6 +7,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
 import { Element } from "react-scroll";
+import Experience from "./components/Experience";
 
 function App() {
   return (
@@ -18,12 +19,15 @@ function App() {
       <Element name="skills">
         <Skills />
       </Element>
-      <Element name="about">
-        <About />
+      <Element name="experience">
+        <Experience />
       </Element>
       <Element name="projects">
         <Projects />
       </Element>
+      {/* <Element name="about">
+        <About />
+      </Element> */}
       <Element name="contact">
         <Contact />
       </Element>

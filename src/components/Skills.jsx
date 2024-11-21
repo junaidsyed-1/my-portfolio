@@ -95,7 +95,7 @@ const Skills = () => {
 
   return (
     <div
-      className="min-h-screen flex items-center justify-center py-16"
+      className="min-h-screen flex items-center justify-center py-8"
       ref={skillsRef}
     >
       <div className="container flex flex-col items-center text-center">

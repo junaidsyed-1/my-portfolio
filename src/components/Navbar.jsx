@@ -30,7 +30,7 @@ const Navbar = () => {
               Home
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               to="about"
               smooth={true}
@@ -39,7 +39,7 @@ const Navbar = () => {
             >
               About
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               to="skills"
@@ -48,6 +48,16 @@ const Navbar = () => {
               className="cursor-pointer"
             >
               Skills
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="experience"
+              smooth={true}
+              duration={200}
+              className="cursor-pointer"
+            >
+              Experience
             </Link>
           </li>
           <li>
