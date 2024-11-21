@@ -28,3 +28,27 @@ export const insternshipData = {
   ],
   duration: "15-07-2021 - 15-01-2022",
 };
+
+export const projectsData = [
+  {
+    name: "Manthan Experts",
+    description:
+      "As a front-end developer at Manthan Experts, I contributed to developing scalable, responsive, and dynamic web applications. I primarily worked with the MERN stack (MongoDB, Express.js, React.js, and Node.js), integrating both front-end and back-end functionalities.",
+    skills: ["NextJs", "React", "JavaScript", "MongoDB", "Express"],
+    link: "https://manthanexperts.com/",
+  },
+  {
+    name: "NetFlixGPT",
+    description:
+      "I built a high-performance, large-scale web application from scratch using React JS and Redux Toolkit (RTK) for state management. The application features reusable and maintainable components, custom hooks, and a clean, testable, and scalable codebase. I implemented efficient form handling and memoization techniques to ensure optimal performance. The app integrates TMDB APIs to fetch movie and TV show data and leverages GPT APIs for intelligent search functionality, allowing users to type any query and receive tailored suggestions. Additionally, the app uses Firebase Authentication for secure user sign-ins and managing authentication flow. The entire UI is config-driven, providing flexibility and scalability, and the application is fully responsive, ensuring an excellent experience across devices.",
+    skills: ["React", "JavaScript", "Redux Toolkit", "TailwindCSS"],
+    link: "https://netflix-j.firebaseapp.com/",
+  },
+  {
+    name: "NewTube",
+    description:
+      "I developed a YouTube clone using React and Redux for state management. The application features a fully functional video player, allowing users to browse and watch videos seamlessly. One of the standout features of the app is the live chat API polling, which ensures real-time chat interactions during video playback. This feature leverages polling techniques to constantly update the chat without requiring the user to refresh the page, delivering a dynamic and interactive experience. The app is fully responsive, providing an optimal viewing experience across various devices, and is designed to handle high traffic with smooth performance and state management.",
+    skills: ["React", "Redux Toolkit", " TailwindCSS", "JavaScript"],
+    link: "https://newtube.web.app/",
+  },
+];

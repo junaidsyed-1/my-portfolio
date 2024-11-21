@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { experienceData, insternshipData } from "../utils/constnants";
 import { animate, motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const Experience = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -13,6 +14,9 @@ const Experience = () => {
     initial: { x: 200 },
     animate: { x: 0 },
   };
+
+  const cardClass =
+    "card bg-gradient-to-br from-[#1A103D] to-[#120C2A] text-white w-full md:w-[700px] lg:w-[800px] shadow-2xl rounded-lg border-4 border-[#493094] overflow-hidden";
 
   return (
     <div className="min-h-screen flex justify-center py-16">
@@ -66,7 +70,7 @@ const Experience = () => {
             {activeTab === 1 && (
               <div>
                 <h2 className="mb-4">From {experienceData.duration}</h2>
-                <div className="card bg-gradient-to-br from-[#1A103D] to-[#120C2A] text-white w-full md:w-[700px] lg:w-[800px] shadow-2xl rounded-lg border-4 border-[#493094] overflow-hidden">
+                <div className={cardClass}>
                   <div className="card-body p-10 md:p-12 lg:p-14 space-y-6">
                     <h2 className="card-title text-xl font-bold text-white">
                       {experienceData.title}
@@ -80,12 +84,25 @@ const Experience = () => {
                     </span>
 
                     <div className="flex flex-col sm:flex-row sm:justify-between items-center space-y-4 sm:space-y-0">
-                      <button className="btn btn-secondary w-full sm:w-auto">
+                      <motion.a
+                        whileHover={{ scale: 1.06 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="btn btn-secondary w-full sm:w-auto"
+                        href="/JunaidSyedCV.pdf"
+                        download="JunaidSyedCV"
+                      >
                         Download CV
-                      </button>
-                      <button className="btn btn-outline w-full sm:w-auto">
-                        View more of my work
-                      </button>
+                      </motion.a>
+
+                      <Link to="projects">
+                        <motion.button
+                          whileHover={{ scale: 1.06 }}
+                          whileTap={{ scale: 0.95 }}
+                          className="btn btn-outline w-full sm:w-auto"
+                        >
+                          View more of my work
+                        </motion.button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -95,7 +112,7 @@ const Experience = () => {
             {activeTab === 2 && (
               <div>
                 <h2 className="mb-4">From {insternshipData.duration}</h2>
-                <div className="card bg-gradient-to-br from-[#1A103D] to-[#120C2A] text-white w-full md:w-[700px] lg:w-[800px] shadow-2xl rounded-lg border-4 border-[#493094] overflow-hidden">
+                <div className={cardClass}>
                   <div className="card-body p-10 md:p-12 lg:p-14 space-y-6">
                     <h2 className="card-title text-xl font-bold text-white">
                       {insternshipData.title}
@@ -109,12 +126,24 @@ const Experience = () => {
                     </span>
 
                     <div className="flex flex-col sm:flex-row sm:justify-between items-center space-y-4 sm:space-y-0">
-                      <button className="btn btn-secondary w-full sm:w-auto">
+                      <motion.a
+                        whileHover={{ scale: 1.06 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="btn btn-secondary w-full sm:w-auto"
+                        href="/JunaidSyedCV.pdf"
+                        download="JunaidSyedCV"
+                      >
                         Download CV
-                      </button>
-                      <button className="btn btn-outline w-full sm:w-auto">
-                        View more of my work
-                      </button>
+                      </motion.a>
+                      <Link to="projects">
+                        <motion.button
+                          whileHover={{ scale: 1.06 }}
+                          whileTap={{ scale: 0.95 }}
+                          className="btn btn-outline w-full sm:w-auto"
+                        >
+                          View more of my work
+                        </motion.button>
+                      </Link>
                     </div>
                   </div>
                 </div>
