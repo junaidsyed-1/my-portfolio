@@ -7,12 +7,12 @@ const Experience = () => {
   const [activeTab, setActiveTab] = useState(1);
 
   const textAnnimationVariants = {
-    initial: { x: -200 },
-    animate: { x: 0 },
+    initial: { opacity: 0, y: -200 },
+    animate: { opacity: 1, y: 0 },
   };
   const cardAnnimationVariants = {
-    initial: { x: 200 },
-    animate: { x: 0 },
+    initial: { opacity: 0, y: 200 },
+    animate: { opacity: 1, y: 0 },
   };
 
   const cardClass =
@@ -29,6 +29,7 @@ const Experience = () => {
           viewport={{
             once: true,
           }}
+          layout
         >
           <h2 className="text-2xl font-semibold text-error">My Experience</h2>
           <h2 className="my-5 text-5xl font-bold">
@@ -42,6 +43,7 @@ const Experience = () => {
           whileInView="animate"
           transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ once: true }}
+          layout
         >
           <div className="flex justify-center pt-8">
             <div role="tablist" className="tabs tabs-bordered">

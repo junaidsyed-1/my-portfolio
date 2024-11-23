@@ -109,17 +109,6 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                to="about"
-                smooth={true}
-                duration={200}
-                onClick={() => setIsMenuOpen(false)}
-                className="cursor-pointer"
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
                 to="skills"
                 smooth={true}
                 duration={200}
@@ -127,6 +116,17 @@ const Navbar = () => {
                 className="cursor-pointer"
               >
                 Skills
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="experience"
+                smooth={true}
+                duration={200}
+                onClick={() => setIsMenuOpen(false)}
+                className="cursor-pointer"
+              >
+                Experience
               </Link>
             </li>
             <li>

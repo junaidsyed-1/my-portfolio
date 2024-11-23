@@ -40,12 +40,12 @@ const Hero = () => {
   return (
     <div className="bg-base-100 min-h-screen flex justify-center items-center">
       <div className="container flex flex-col-reverse lg:flex-row items-center px-6 py-8">
-        {/* Left Section: Text */}
         <div className="lg:w-1/2 text-center lg:text-left mt-5 md:">
           <motion.div
-            initial={{ x: -200 }}
-            animate={{ x: 0 }}
-            transition={{ duration: 1.5, ease: "easeOut" }}
+            initial={{ x: -200, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            layout
           >
             <h3 className="font-bold text-error text-3xl ">Hi, I’m </h3>
             <h1 className="text-4xl lg:text-6xl font-bold text-error mb-4">
@@ -87,12 +87,11 @@ const Hero = () => {
           </motion.div>
         </div>
 
-        {/* Right Section: Image */}
         <div className="lg:w-1/2 mt-8 lg:mt-0 flex justify-center relative">
           <motion.div
-            initial={{ x: 200 }}
-            animate={{ x: 0 }}
-            transition={{ duration: 1.5, ease: "easeOut" }}
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1, ease: "easeOut" }}
             className="relative w-full max-w-xs lg:max-w-sm xl:max-w-md 2xl:max-w-lg"
           >
             {isLoading && (

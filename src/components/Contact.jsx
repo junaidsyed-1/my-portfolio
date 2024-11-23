@@ -11,13 +11,13 @@ const Contact = () => {
   });
 
   const textAnimationVariants = {
-    initial: { x: -200 },
-    animate: { x: 0 },
+    initial: { opacity: 0, y: -200 },
+    animate: { opacity: 1, y: 0 },
   };
 
   const cardAnimationVariants = {
-    initial: { x: 200 },
-    animate: { x: 0 },
+    initial: { opacity: 0, y: 200 },
+    animate: { opacity: 1, y: 0 },
   };
 
   const handleChange = (e) => {
@@ -62,6 +62,7 @@ const Contact = () => {
           whileInView="animate"
           viewport={{ once: true }}
           transition={{ duration: 1, ease: "easeOut" }}
+          layout
         >
           <h2 className="text-2xl font-semibold text-error text-center">
             Contact Me
@@ -77,6 +78,7 @@ const Contact = () => {
           viewport={{ once: true }}
           transition={{ duration: 1, ease: "easeOut" }}
           className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8"
+          layout
         >
           <div className="space-y-8">
             <div className="card w-full bg-base-100 shadow-xl">
@@ -155,7 +157,6 @@ const Contact = () => {
                   </button>
                 </div>
               </form>
-              <span className="text-sm mt-2">Message Sent Successfully</span>
             </div>
           </div>
         </motion.div>
