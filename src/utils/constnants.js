@@ -52,3 +52,23 @@ export const projectsData = [
     link: "https://newtube.web.app/",
   },
 ];
+
+export const themes = [
+  "synthwave",
+  "dark",
+  "coffee",
+  "light",
+  "emerald",
+  "retro",
+  "cupcake",
+  "bumblebee",
+  "cyberpunk",
+  "corporate",
+  "halloween",
+  "garden",
+  "forest",
+  "aqua",
+  "lofi",
+  "pastel",
+  "fantasy",
+];

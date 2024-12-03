@@ -1,9 +1,15 @@
-import React, { useState } from "react";
-import { Menu, X } from "lucide-react"; // Import icons
+import React, { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
 import { Link } from "react-scroll";
+import { themes } from "../utils/constnants";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [selectedTheme, setSelectedTheme] = useState("synthwave");
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", selectedTheme);
+  }, [selectedTheme]);
 
   return (
     <nav className="navbar bg-base-200 sticky top-0 z-50">
@@ -30,16 +36,6 @@ const Navbar = () => {
               Home
             </Link>
           </li>
-          {/* <li>
-            <Link
-              to="about"
-              smooth={true}
-              duration={200}
-              className="cursor-pointer"
-            >
-              About
-            </Link>
-          </li> */}
           <li>
             <Link
               to="skills"
@@ -79,6 +75,19 @@ const Navbar = () => {
             >
               Contact
             </Link>
+          </li>
+          <li>
+            <select
+              className="select select-accent mx-2 w-full max-w-xs bg-transparent"
+              value={selectedTheme}
+              onChange={(e) => setSelectedTheme(e.target.value)}
+            >
+              {themes.map((theme) => (
+                <option key={theme} value={theme} className="bg-transparent">
+                  {theme.charAt(0).toUpperCase() + theme.slice(1)}
+                </option>
+              ))}
+            </select>
           </li>
         </ul>
       </div>

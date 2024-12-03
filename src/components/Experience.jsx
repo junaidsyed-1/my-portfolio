@@ -43,7 +43,6 @@ const Experience = () => {
           whileInView="animate"
           transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ once: true }}
-          layout
         >
           <div className="flex justify-center pt-8">
             <div role="tablist" className="tabs tabs-bordered">
